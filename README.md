@@ -13,7 +13,7 @@ This project implements a Decision Tree-based classifier to predict whether an e
 ✔ Visualizations for model performance  
 ✔ Easy-to-replicate workflow  
 
-Dataset: https://www.mediafire.com/file/qqa1p8q2bydle4i/adult_3.csv/file
+Dataset: https://www.mediafire.com/file/z02ebrv02rqdgvq/adult_3.csv/file
 
 **Libraries Used:**  
 - `pandas`, `scikit-learn`, `matplotlib`, `seaborn`  
