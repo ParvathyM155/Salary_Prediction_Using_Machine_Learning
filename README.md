@@ -28,7 +28,7 @@ Dataset: https://www.mediafire.com/file/z02ebrv02rqdgvq/adult_3.csv/file
 - HR analysts exploring salary trends  
 - Data science students  
 
-Data code with output: https://www.mediafire.com/file/in1klz50nc14ujr/Employee_Salary_Prediction.ipynb/file
+Data code with output: https://colab.research.google.com/drive/1Uda3M1JEDfxKX297TBlTpFaGV5yx-35F?usp=sharing
 
 **Author Name:**
  Parvathy M
