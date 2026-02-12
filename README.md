@@ -53,5 +53,5 @@ This project implements a Decision Tree-based classifier to predict whether an e
 
 
 ## ✍️Author Name:
- Parvathy M
+ **Parvathy M**
  
