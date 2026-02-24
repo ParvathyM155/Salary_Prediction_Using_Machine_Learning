@@ -1,56 +1,61 @@
-# Salary Prediction Using Machine Learning
+# 💸 Salary Prediction Using Machine Learning
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
+> **Predicting annual income brackets using Decision Tree Classifiers to identify key socioeconomic drivers.**
 
-## 📖 Overview
-This project uses a Decision Tree Classifier to predict if an individual's annual income exceeds $50,000. It leverages demographic and employment data to identify key factors that influence salary brackets.
-This project implements a Decision Tree-based classifier to predict whether an employee's salary is above or below $50K/year, using demographic and employment features like age, education level, and working hours. The solution includes:  
-- Data preprocessing (cleaning, encoding categorical features)  
-- Model training & evaluation (accuracy, confusion matrix)  
-- Visualization (heatmaps, classification metrics)  
-- Sample predictions in a structured table  
+---
 
+## 📖 Project Overview
+This project implements a **Decision Tree-based classifier** to predict whether an individual's salary exceeds **$50K/year**. By analyzing demographic and employment features, the model identifies patterns that distinguish high-income earners.
+
+### 🎯 Objective
+- Perform Exploratory Data Analysis (EDA) on census data.
+- Build a robust classification model.
+- Evaluate performance using **Confusion Matrices** and **Classification Metrics (Precision, Recall, F1-Score)**.
+
+---
 
 ## 🚀 Key Features
-🐍 **Clean Code** – Well-documented Python logic.
+- ✅ **End-to-End Pipeline**: From raw data cleaning to model deployment logic.
+- ✅ **Data Visualization**: Includes heatmaps for correlation and feature importance charts.
+- ✅ **Interactive Testing**: Ready-to-run in Google Colab.
 
-📓 **Interactive** – Jupyter Notebooks for easy testing.
+---
 
-📊 **Visualized** – Detailed performance heatmaps and charts.
+## 🛠️ Tech Stack
+| Category | Tools |
+| :--- | :--- |
+| **Language** | Python 3.x |
+| **ML Libraries** | Scikit-Learn, Pandas, NumPy |
+| **Visualization** | Seaborn, Matplotlib |
+| **Platform** | Google Colab / Jupyter Notebook |
 
-⚙️ **Workflow** – Simple, easy-to-replicate pipeline.
+---
 
+## 📊 Dataset Insights
+The model is trained on the classic "Adult Census Income" dataset.
+- **Features**: Age, Education, Occupation, Hours-per-week, Marital Status.
+- **Target Variable**: Salary (`<=50K` or `>50K`).
+- **Source**: [Adult Dataset](https://www.mediafire.com/file/z02ebrv02rqdgvq/adult_3.csv/file)
 
-## 📊 Dataset
-- Source: https://www.mediafire.com/file/z02ebrv02rqdgvq/adult_3.csv/file
+---
 
-- Features: Age, Education, Occupation, Hours-per-week, and Marital Status.
+## 📈 Methodology
+1. **Preprocessing**: Handling missing values and encoding categorical data (One-Hot/Label Encoding).
+2. **Splitting**: 80/20 Train-Test split.
+3. **Training**: Decision Tree Classifier implementation.
+4. **Analysis**: Visualizing the decision boundaries and performance metrics.
 
-- Target: Salary category (<=50K or >50K). 
+---
 
+## 💻 How to Run
+1. **Clone the Repo**
+   ```bash
+   git clone [https://github.com/ParvathyM155/Salary_Prediction_Using_Machine_Learning.git](https://github.com/ParvathyM155/Salary_Prediction_Using_Machine_Learning.git)
 
-## 🛠️ Tools & Technologies
-- Python: Core programming.
-
-- Libraries: Pandas, Scikit-learn, Matplotlib, Seaborn.
-
-- Environment: Google Colab. 
-
-
-## 💡Target Users: 
-- Beginners learning ML classification
- 
-- HR analysts exploring salary trends
-  
-- Data science students  
-
-
-## 🚀How to Use:
-1. Clone the repo
-2. Run `salary_prediction.ipynb`  
-3. Modify test cases in the notebook for custom predictions
-   
-#### Data code with output: https://colab.research.google.com/drive/1Uda3M1JEDfxKX297TBlTpFaGV5yx-35F?usp=sharing
-
+---
 
 ## ✍️Author Name:
  **Parvathy M**
