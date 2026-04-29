@@ -1,0 +1,2 @@
+# Salary_Prediction_Using_Machine_Learning
+Machine Learning project for employee salary prediction using classification algorithms
