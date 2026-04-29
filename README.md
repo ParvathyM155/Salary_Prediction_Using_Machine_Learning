@@ -3,21 +3,20 @@
 > Binary classification project predicting whether an individual's annual income exceeds **$50K** based on demographic and employment attributes from the UCI Adult Census dataset.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
 ## 📑 Table of Contents
-
 - [Overview](#-overview)
 - [Dataset](#-dataset)
 - [Project Workflow](#-project-workflow)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Usage](#-usage)
+- [Installation](#%EF%B8%8F-installation)
+- [Usage](#%EF%B8%8F-usage)
 - [Exploratory Data Analysis](#-exploratory-data-analysis)
 - [Modeling](#-modeling)
 - [Results](#-results)
@@ -36,7 +35,6 @@ This project applies supervised machine learning to predict whether a person ear
 ---
 
 ## 📊 Dataset
-
 - **Source:** [UCI Machine Learning Repository — Adult Dataset](https://archive.ics.uci.edu/ml/datasets/adult)
 - **Records:** ~48,842 instances
 - **Features:** 14 demographic and employment attributes
@@ -51,7 +49,6 @@ This project applies supervised machine learning to predict whether a person ear
 ---
 
 ## 🔁 Project Workflow
-
 1. **Data Loading & Inspection**
 2. **Data Cleaning** — handling missing values & duplicates
 3. **Exploratory Data Analysis (EDA)**
@@ -68,7 +65,7 @@ This project applies supervised machine learning to predict whether a person ear
 ## 🛠 Tech Stack
 
 | Category | Tools |
-|----------|-------|
+|---|---|
 | Language | Python 3.9+ |
 | Data Handling | pandas, numpy |
 | Visualization | matplotlib, seaborn |
@@ -79,7 +76,6 @@ This project applies supervised machine learning to predict whether a person ear
 ---
 
 ## 📁 Project Structure
-
 ```
 salary-prediction/
 │
@@ -94,6 +90,10 @@ salary-prediction/
 │
 ├── images/
 │   └── eda_plots/
+│       ├── correlation_heatmap.png
+│       ├── feature_importance.png
+│       ├── confusion_matrix.png
+│       └── roc_curve.png
 │
 ├── requirements.txt
 ├── README.md
@@ -107,8 +107,8 @@ salary-prediction/
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/salary-prediction.git
-cd salary-prediction
+git clone https://github.com/ParvathyM155/Salary_Prediction_Using_Machine_Learning.git
+cd Salary_Prediction_Using_Machine_Learning
 ```
 
 **2. Create and activate a virtual environment**
@@ -144,18 +144,21 @@ prediction = model.predict(new_data)
 ## 🔍 Exploratory Data Analysis
 
 Key insights uncovered during EDA:
-
 - Strong correlation between **education level** and income.
 - **Hours-per-week** and **age** significantly affect earning probability.
 - **Marital status** and **occupation** are powerful categorical predictors.
 - The dataset is **imbalanced** (~76% `<=50K`, ~24% `>50K`).
+
+### 🔥 Correlation Heatmap
+Visualizes pairwise relationships between numerical features and the target variable.
+
+![Correlation Heatmap](images/eda_plots/correlation_heatmap.png)
 
 ---
 
 ## 🤖 Modeling
 
 The following classifiers were trained and compared:
-
 - Logistic Regression
 - Decision Tree
 - Random Forest
@@ -165,12 +168,17 @@ The following classifiers were trained and compared:
 
 Hyperparameter tuning was performed using **GridSearchCV** with cross-validation.
 
+### 🌟 Feature Importance
+Top features driving the Gradient Boosting model's predictions.
+
+![Feature Importance](images/eda_plots/feature_importance.png)
+
 ---
 
 ## 🏆 Results
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
-|-------|----------|-----------|--------|----------|---------|
+|---|---|---|---|---|---|
 | Logistic Regression | 0.85 | 0.74 | 0.60 | 0.66 | 0.90 |
 | Random Forest | 0.86 | 0.76 | 0.63 | 0.69 | 0.91 |
 | **Gradient Boosting** | **0.87** | **0.79** | **0.65** | **0.71** | **0.92** |
@@ -182,13 +190,22 @@ Hyperparameter tuning was performed using **GridSearchCV** with cross-validation
 ## 📈 Model Evaluation
 
 Evaluation techniques applied:
-
 - Confusion Matrix
 - Classification Report
 - ROC Curve & AUC
 - Precision–Recall Curve
 - K-Fold Cross-Validation
 - Feature Importance Analysis
+
+### 🧩 Confusion Matrix
+Breakdown of correct vs incorrect predictions for each income class.
+
+![Confusion Matrix](images/eda_plots/confusion_matrix.png)
+
+### 📉 ROC Curve
+Trade-off between true-positive and false-positive rates across thresholds.
+
+![ROC Curve](images/eda_plots/roc_curve.png)
 
 ---
 
@@ -199,7 +216,6 @@ The final Gradient Boosting model reliably predicts income brackets with **~87% 
 ---
 
 ## 🚀 Future Improvements
-
 - Address class imbalance using **SMOTE** or class weighting
 - Experiment with **XGBoost** and **LightGBM**
 - Deploy the model as a **Streamlit** or **Flask** web app
@@ -211,7 +227,7 @@ The final Gradient Boosting model reliably predicts income brackets with **~87% 
 ## 👤 Author
 
 **Parvathy M**
-- 🌐 Portfolio: [yourwebsite.com](https://yourwebsite.com)
+- 🌐 Portfolio: [yourwebsite.com](https://yourwebsite.com/)
 - 💼 LinkedIn: [linkedin.com/in/parvathym155](https://linkedin.com/in/parvathym155)
 - 🐙 GitHub: [@ParvathyM155](https://github.com/ParvathyM155)
 
